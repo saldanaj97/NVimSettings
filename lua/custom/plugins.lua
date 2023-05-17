@@ -32,10 +32,16 @@ local plugins = {
   },
   {
     "wakatime/vim-wakatime",
+    lazy=false,
   },
   {
     "christoomey/vim-tmux-navigator",
     lazy = false,
+  },
+  {
+    "github/copilot.vim",
+    lazy=false,
+    event = "InsertEnter",
   }
 }
 
