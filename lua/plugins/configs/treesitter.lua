@@ -1,5 +1,5 @@
 local options = {
-  ensure_installed = { "lua" },
+  ensure_installed = { "lua", "javascript", "typescript", "tsx", "json", "html", "css", "scss", "python", "gitignore", "vim"},
 
   highlight = {
     enable = true,
@@ -7,6 +7,7 @@ local options = {
   },
 
   indent = { enable = true },
+  autotag = { enable = true },
 }
 
 return options

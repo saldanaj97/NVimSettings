@@ -2,6 +2,7 @@ local opt = vim.opt
 local g = vim.g
 local config = require("core.utils").load_config()
 
+opt.textwidth = 120
 -------------------------------------- globals -----------------------------------------
 g.nvchad_theme = config.ui.theme
 g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
@@ -15,12 +16,21 @@ opt.showmode = false
 opt.clipboard = "unnamedplus"
 opt.cursorline = true
 
+vim.scriptencoding = 'utf-8'
+opt.encoding = 'utf-8'
+opt.encoding = 'utf-8'
+opt.fileencoding = 'utf-8'
+
 -- Indenting
 opt.expandtab = true
 opt.shiftwidth = 2
 opt.smartindent = true
 opt.tabstop = 2
 opt.softtabstop = 2
+opt.autoindent = true
+opt.ai = true
+opt.si = true
+opt.wrap = false
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true

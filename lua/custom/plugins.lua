@@ -9,6 +9,7 @@ local plugins = {
       require "plugins.configs.lspconfig"
       require "custom/configs.lspconfig"
     end,
+    lazy = false,
   },
   {
     "williamboman/mason.nvim",
@@ -18,7 +19,7 @@ local plugins = {
         "chrome-debug-adapter",
         "eslint-lsp",
         "eslint_d",
-        "firefox-debug-adapter",
+       "firefox-debug-adapter",
         "gh",
         "lua-language-server",
         "node-debug2-adapter",
@@ -38,11 +39,23 @@ local plugins = {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
+  -- {
+  --   "github/copilot.vim",
+  --   event = "InsertEnter",
+  -- },
   {
-    "github/copilot.vim",
-    lazy=false,
-    event = "InsertEnter",
-  }
+    "windwp/nvim-ts-autotag",
+  },
+  {
+    "windwp/nvim-autopairs",
+  },
+  {
+    'nvim-tree/nvim-tree.lua',
+    lazy = true,
+    dependencies = {
+      'nvim-tree/nvim-web-devicons'
+    }
+  },
 }
 
 return plugins

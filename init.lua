@@ -20,3 +20,20 @@ dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
 
+require "lspconfig".pyright.setup{}
+
+require("custom.configs.mappings")
+
+local has = function(x)
+  return vim.fn.has(x) == 1
+end
+
+local is_mac = has "macunix"
+local is_windows = has "win32"
+
+if is_mac then
+  require('macos')
+end
+if is_windows then
+  require('windows')
+end
