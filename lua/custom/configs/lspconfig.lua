@@ -3,8 +3,6 @@ local capabilities = require('plugins.configs.lspconfig').capabilities
 
 local lspconfig = require "lspconfig"
 
-
-lspconfig.tailwindcss.setup{
-  on_attach = on_attach,
-  capabilities = capabilities,
+lspconfig.tsserver.setup{
+  filetypes = { "javascript", "typescript", "typescriptreact", "typescript.tsx" }
 }

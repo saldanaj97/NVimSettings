@@ -13,23 +13,6 @@ local plugins = {
   },
   {
     "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "tailwindcss-language-server",
-        "chrome-debug-adapter",
-        "eslint-lsp",
-        "eslint_d",
-       "firefox-debug-adapter",
-        "gh",
-        "lua-language-server",
-        "node-debug2-adapter",
-        "prettier",
-        "prettierd",
-        "pylint",
-        "python-lsp-server",
-        "typescript-language-server",
-      },
-    },
   },
   {
     "wakatime/vim-wakatime",
@@ -39,10 +22,10 @@ local plugins = {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
-  -- {
-  --   "github/copilot.vim",
-  --   event = "InsertEnter",
-  -- },
+  {
+    "github/copilot.vim",
+    event = "InsertEnter",
+  },
   {
     "windwp/nvim-ts-autotag",
   },
