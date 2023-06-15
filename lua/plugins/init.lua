@@ -2,11 +2,9 @@
 -- List of all default plugins & their definitions
 local default_plugins = {
 
-  {"nvim-lua/plenary.nvim", lazy=false},
-  
+  { "nvim-lua/plenary.nvim", lazy = false },
   -- nvchad plugins
   { "NvChad/extensions", branch = "v2.0" },
-
   {
     "NvChad/base46",
     branch = "v2.0",
@@ -14,7 +12,6 @@ local default_plugins = {
       require("base46").load_all_highlights()
     end,
   },
-
   {
     "NvChad/ui",
     branch = "v2.0",
@@ -23,7 +20,6 @@ local default_plugins = {
       require "nvchad_ui"
     end,
   },
-
   {
     "NvChad/nvterm",
     init = function()
@@ -34,7 +30,6 @@ local default_plugins = {
       require("nvterm").setup(opts)
     end,
   },
-
   {
     "NvChad/nvim-colorizer.lua",
     init = function()
@@ -49,7 +44,6 @@ local default_plugins = {
       end, 0)
     end,
   },
-
   {
     "nvim-tree/nvim-web-devicons",
     opts = function()
@@ -60,7 +54,6 @@ local default_plugins = {
       require("nvim-web-devicons").setup(opts)
     end,
   },
-
   {
     "lukas-reineke/indent-blankline.nvim",
     init = function()
@@ -75,7 +68,6 @@ local default_plugins = {
       require("indent_blankline").setup(opts)
     end,
   },
-
   {
     "nvim-treesitter/nvim-treesitter",
     init = function()
